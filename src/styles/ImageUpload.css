@@ -1,0 +1,76 @@
+.upload-container {
+  text-align: center;
+  padding: 25px;
+  max-width: 450px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.upload-container:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+input {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 10px auto;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+.message.error {
+  color: #dc3545;
+}
+
+.preview-img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  border: 3px solid #ddd;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.preview-img:hover {
+  transform: scale(1.05);
+}

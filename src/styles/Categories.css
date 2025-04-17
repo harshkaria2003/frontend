@@ -1,0 +1,123 @@
+/* ============================
+    Slider Wrapper
+============================ */
+.slider-wrapper {
+  width:100%; /* Occupy full horizontal width */
+  max-height: 550px; /* Adjust as needed */
+  border-radius: 0; /* Remove border-radius for full width */
+  overflow: hidden;
+  position: relative;
+  margin-top: calc(56px + 0px); /* Adjust '56px' to your navbar's height + desired spacing (0 for no space) */
+  background: #f8f9fa; /* Light background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* More subtle shadow */
+}
+
+.slider-wrapper:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================
+    Carousel Container (React Bootstrap)
+============================ */
+.carousel {
+  height: 200%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  background-color: #e9ecef; /* Fallback background color */
+}
+
+/* ============================
+    Slider Image
+============================ */
+.slider-image {
+  display: block;
+  width: 100%; /* Occupy full horizontal width of the carousel item */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure it doesn't exceed the slider height */
+  object-fit: contain; /* Show the full image without cropping, with potential empty space */
+  border-radius: 0; /* Remove border-radius to match wrapper */
+}
+
+/* If you prefer the image to fill the entire slider and potentially crop: */
+
+.slider-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* ============================
+    Carousel Controls (Optional Styling)
+============================ */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ============================
+    Carousel Indicators (Optional Styling)
+============================ */
+.carousel-indicators {
+  bottom: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* ============================
+    Responsive Adjustments
+============================ */
+@media (max-width: 768px) {
+  .slider-wrapper {
+    max-height: 300px;
+    border-radius: 0;
+    margin-top: calc(70px + 0px); /* Adjust for mobile navbar height */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+  }
+}
+

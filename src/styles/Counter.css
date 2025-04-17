@@ -1,0 +1,102 @@
+/* Counter Container */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Counter Display - Centered */
+.counter-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #343a40;
+  margin: 20px 0;
+  padding: 15px 40px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Button Container - Space Between */
+.counter-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px; /* Increased width for more space */
+  margin-top: 15px;
+}
+
+/* Increment Button - Green */
+.increment-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.increment-btn:hover {
+  background-color: #218838;
+}
+
+/* Decrement Button - Full Red */
+.decrement-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.decrement-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Set Counter Section */
+.set-counter {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.set-counter input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.set-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.set-btn:hover {
+  background-color: #0056b3;
+}

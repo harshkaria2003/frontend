@@ -1,0 +1,137 @@
+/* =============================
+    Navbar Base Styles
+============================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: fixed; /* Make the navbar fixed to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  height: auto; /* Allow navbar height to adjust based on content */
+}
+
+/* Ensure full width on all screen sizes */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+body {
+  padding-top: 56px; /* Add padding to the top of the body to prevent content from being hidden behind the fixed navbar (adjust '56px' to your actual navbar height) */
+}
+
+/* =============================
+    Light & Dark Themes
+============================= */
+.navbar.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+.navbar.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* =============================
+    Navigation List
+============================= */
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+/* =============================
+    Nav Links
+============================= */
+.navbar a {
+  color: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #f4b400;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+/* =============================
+    Theme Toggle Button
+============================= */
+.navbar button {
+  background: none;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar button:hover,
+.navbar button:focus {
+  background-color: #f4b400;
+  color: #1e1e1e;
+  outline: none;
+}
+
+/* =============================
+    Mobile Responsive Design
+============================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .navbar a {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 12px 10px;
+  }
+
+  .navbar button {
+    margin-top: 12px;
+    align-self: flex-start;
+  }
+
+  body {
+    padding-top: 70px; /* Adjust body padding for mobile navbar height */
+  }
+}
