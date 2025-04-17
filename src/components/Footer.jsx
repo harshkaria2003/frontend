@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className={`footer ${theme}`}>
-      <p>&copy;  all rights reserved by harsh karia @2025</p>
+      <p>&copy;  all rights reserved by harsh karia @2025 thank you</p>
     </footer>
   );
 };
