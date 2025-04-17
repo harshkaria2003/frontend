@@ -82,7 +82,7 @@ const Userprofile = () => {
             alt="Cover"
             className="w-100 rounded"
             style={{
-              height: "250px",
+              height: "350px",
               objectFit: "cover",
               cursor: "pointer",
             }}
@@ -93,7 +93,7 @@ const Userprofile = () => {
           <div
             className="w-100 rounded"
             style={{
-              height: "250px",
+              height: "350px",
               backgroundColor: "#fff",
               border: "1px solid #ddd",
               cursor: "pointer",
@@ -115,7 +115,7 @@ const Userprofile = () => {
           className="position-absolute translate-middle"
           style={{
             bottom: "-60px",
-            left: "50%",
+            left: "5%",
           }}
         >
           <img
